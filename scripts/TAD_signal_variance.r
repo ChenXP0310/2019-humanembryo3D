@@ -25,7 +25,7 @@ header<- function(B){
   return(B)
 }
 
-a<- read.table(paste("Human.blastocyst.TADsignal.txt",sep=""),header=F,na.strings = "NA")  ## hardcoding for inputfile
+a<- read.table("Human.blastocyst.TADsignal.txt",header=F,na.strings = "NA")  ## hardcoding for inputfile
 TAD<- list(HBlt<-a)
 names(TAD)<-c("HBlt")
 TAD_Filt<-lapply(TAD,TADsingal_Filt)
