@@ -8,7 +8,7 @@ resk=100000
 superesk=400000
 RE=GATC
 
-makeTagDirectory ${sm}_un -format HiCsummary homer.$sm.summary.txt
+makeTagDirectory ${sm}_un -format HiCsummary ./example\ data/homer.$sm.summary.txt
 cp -pr ${sm}_un ${sm}_pro
 makeTagDirectory ${sm}_pro -update -genome /home/chenxp/anaconda2/homer/data/genomes/$genome/ -removePEbg -restrictionSite $RE -both -removeSelfLigation
 
